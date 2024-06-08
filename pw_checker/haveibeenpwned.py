@@ -16,9 +16,9 @@ makeRequest = urllib3.request("GET","https://api.pwnedpasswords.com/range/"+firs
 
 if makeRequest.status == 200:
     print("Anfrage ok!")
-    jsonData = makeRequest.data
+    responeData = makeRequest.data
     
-    data = jsonData.split()
+    data = responeData.split()
 
     found = 0
     foundHash = []
